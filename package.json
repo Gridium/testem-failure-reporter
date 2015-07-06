@@ -1,0 +1,24 @@
+{
+  "name": "testem-failure-reporter",
+  "version": "1.0.0",
+  "description": "Reporter for testem that outputs only failed tests",
+  "main": "index.js",
+  "repository" : { 
+    "type" : "git",
+    "url" : "git://github.com/Gridium/testem-failure-reporter.git"
+  },
+  "scripts": {
+    "test": "testem ci"
+  },
+  "keywords": [
+    "testem", "javascript", "testing"
+  ],
+  "author": "Kimberly Nicholls",
+  "license": "MIT",
+  "dependencies": {
+    "colors": "^1.1.2"
+  },
+  "devDependencies": {
+    "chai": "^3.0.0"
+  }
+}
