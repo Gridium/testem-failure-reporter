@@ -29,6 +29,9 @@ Run tests in an Ember CLI project on every file change, reporting only failures:
 
     ember test --config-file ~/work/project/testem.js
 
+or retest on change and output coverage diff:
+
+    node_modules/testem-failure-reporter/bin/run-tests.js
 
 ## Notes
 
