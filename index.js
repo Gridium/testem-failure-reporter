@@ -4,6 +4,7 @@ function FailureReporter(out) {
     this.out = out || process.stdout;
     this.total = 0;
     this.fail = 0;
+    this.pass = 0;  // used by ci/index.js getExitCode
 }
 
 FailureReporter.prototype = {
@@ -12,6 +13,8 @@ FailureReporter.prototype = {
         this.total++;
         if (!data.passed) {
             this.fail++;
+        } else {
+            this.pass++;
         }
     },
     display: function(prefix, result) {
