@@ -32,8 +32,8 @@ Run tests in an Ember CLI project, reporting only failures:
 <img src="run1.png" alt="ember test screenshot" width="463">
 
 `bin/run-tests.js` is a sample script that uses 
-(sane)[https://www.npmjs.com/package/sane] to watch the filesystem,
-run tests on changes, parse he (blanket.js)[http://blanketjs.org/] coverage
+[sane](https://www.npmjs.com/package/sane) to watch the filesystem,
+run tests on changes, parse the [blanket.js](http://blanketjs.org/) coverage
 report, and output test coverage changes.
 
     node_modules/testem-failure-reporter/bin/run-tests.js

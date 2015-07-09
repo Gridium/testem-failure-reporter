@@ -1,6 +1,6 @@
 {
   "name": "testem-failure-reporter",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Reporter for testem that outputs only failed tests",
   "main": "index.js",
   "repository": {
