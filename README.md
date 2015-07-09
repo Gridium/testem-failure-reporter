@@ -25,11 +25,16 @@ module.exports = {
 };
 ````
 
-Run tests in an Ember CLI project on every file change, reporting only failures:
+Run tests in an Ember CLI project, reporting only failures:
 
     ember test --config-file ~/work/project/testem.js
 
-or retest on change and output coverage diff:
+<img src="run1.png" alt="ember test screenshot" width="463">
+
+`bin/run-tests.js` is a sample script that uses 
+(sane)[https://www.npmjs.com/package/sane] to watch the filesystem,
+run tests on changes, parse he (blanket.js)[http://blanketjs.org/] coverage
+report, and output test coverage changes.
 
     node_modules/testem-failure-reporter/bin/run-tests.js
 
